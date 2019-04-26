@@ -1,0 +1,19 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">
+    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+    </ion-slide>
+  </ion-slides>
+  <!-- <img src="assets/imgs/cine.png" class="swiper_read_more"> -->
+  <!-- <span class="span_subtitle">
+    <b>é muito divertido</b>
+  </span> -->
+<!--   <p class="paragraph_subtitle">
+    Há 12 anos atuando no Paraguay com rapidez e qualidade!
+  </p>  -->
+  <!-- <a href="#" class="swiper_read_more">LOGIN</a> -->
+</ion-content> 

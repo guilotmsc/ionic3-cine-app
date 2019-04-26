@@ -1,0 +1,129 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.tabs-ios .tabbar {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 0.55px solid rgba(0, 0, 0, 0.3);
+  background: #fed300;
+}
+
+.tabs-ios .tab-button {
+  max-width: 240px;
+  min-height: 49px;
+  font-size: 10px;
+  font-weight: 500;
+  color: black;
+  padding: 0 2px;
+}
+
+.tabs-ios .tab-button-icon {
+  margin-top: 4px;
+  margin-bottom: 1px;
+  min-width: 35px;
+  height: 30px;
+  font-size: 30px;
+  color: black;
+}
+
+.toolbar-background-ios {
+  background: #cc4b43;
+}
+
+.tabs-ios .tab-button:hover:not(.disable-hover),
+.tabs-ios .tab-button[aria-selected=true] {
+  color: black;
+}
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+  color: black;
+}
+
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default {
+  color: white;
+  background-color: #cc4b43;
+}
+
+.segment-ios-primary .segment-button {
+  border-color: #000;
+  background-color: #fdd400;
+  color: black;
+}
+
+
+.segment-ios-primary .segment-button {
+  border-color: #fdd400;
+  background-color: #fdd400;
+  color: black;
+}
+
+.segment-ios-primary .segment-button.segment-activated {
+  color: #000;
+  background-color: #42fefd;
+}
+
+
+
+
+  
+.tabs-md .tabbar {
+  background: #fed300;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+  color: black;
+  padding: 0;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  color: black;
+  -webkit-transform: translate3d(0,  -2px,  0);
+  transform: translate3d(0,  -2px,  0);
+}
+
+.segment-md-primary .segment-button {
+  color: #fff;
+}
+
+.segment-md-primary .segment-button.activated, .segment-md-primary .segment-button.segment-activated {
+  border-color: #42fefd;
+  color: #42fefd;
+  opacity: 1;
+}
+
+.toolbar-background-md {
+  border-color: #cc4b43;
+  background: #cc4b43;
+}
+
+.bar-button-default-md,
+.bar-button-clear-md-default,
+.bar-button-md-default {
+  color: white;
+  background-color: transparent;
+}
+
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner {
+  border-bottom-color: #42fefd;
+  -webkit-box-shadow: inset 0 -1px 0 0 #42fefd;
+  box-shadow: inset 0 -1px 0 0 #42fefd;
+}

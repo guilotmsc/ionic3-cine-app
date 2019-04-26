@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-segment [(ngModel)]="programming" color="primary">
+            <ion-segment-button value="current">
+                EM CARTAZ
+            </ion-segment-button>
+            <ion-segment-button value="future">
+                ESTREIAS
+            </ion-segment-button>
+        </ion-segment> 
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="page-content">
+	<ng-container>
+        <ng-container>
+            <div class="movies current">
+                <div class="movie-detail" tappable (tap)="openMovie()">
+                    <div class="poster">
+                        <div class="content">
+                            <img width="147" height="216" src="assets/imgs/poster1.jpg">
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="title">O Estrangeiro</span>
+                        <span class="country">EUA</span>
+                        <span class="genre ">Acao | Aventura</span>
+                        <span class="line"> 
+                    <span class="date">17/01/2018</span>
+                        <!-- <span class="time">Duracao: 2h10min</span> -->
+                        </span>
+                        <!-- services rating -->
+                        <div class="ratings">
+                            <div class="imdb">
+                                <span>Duracao: <span class="nb">1h 54m</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies current">
+                <div class="movie-detail" tappable>
+                    <div class="poster">
+                        <div class="content">
+                            <img src="assets/imgs/poster2.jpg">
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="title">Extraordinario</span>
+                        <span class="country">EUA</span>
+                        <span class="genre ">Aventura | Comedia</span>
+                        <span class="line"> 
+                    <span class="date">17/01/2018</span>
+                        <!-- <span class="time">Duracao: 2h10min</span> -->
+                        </span>
+                        <!-- services rating -->
+                        <div class="ratings">
+                            <div class="imdb">
+                                <span>Duracao: <span class="nb">1h 54m</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="movies future">
+                <div class="movie-icon future" tappable>
+                    <div class="poster">
+                        <div class="content">
+                            <img src="../assets/imgs/poster1.jpg">
+                        </div>
+                    </div>
+                    <div class="title">O Estrangeiro</div>
+                </div>
+            </div>  -->
+        </ng-container>
+    </ng-container>
+</ion-content>
+ 

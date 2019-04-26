@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar> 
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <p>Se preferir, toque no ícone da câmera para escanear os dados do seu cartão.</p>
+  <div>
+    <img src="assets/imgs/credit-card.png" />
+    <ion-fab right class="pop-in" [ngClass]="{'pop-out': fabGone}" style="top: 23rem;">
+      <button ion-fab mini (click)="scanCard()" color="dark"><ion-icon name="camera"></ion-icon></button>
+    </ion-fab>
+  </div>
+  <div>
+    <ion-item>
+      <ion-label>Bandeira</ion-label>
+      <ion-input type="text" [(ngModel)]="card.cardType"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Numero</ion-label>
+      <ion-input type="text" [(ngModel)]="card.cardNumber"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mês de validade</ion-label>
+      <ion-input type="text" [(ngModel)]="card.expiryMonth"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ano de validade</ion-label>
+      <ion-input type="text" [(ngModel)]="card.expiryYear"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Código Segurança</ion-label>
+      <ion-input type="text" [(ngModel)]="card.cvv"></ion-input>
+    </ion-item>
+  </div>
+</ion-content>

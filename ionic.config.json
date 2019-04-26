@@ -1,0 +1,8 @@
+{
+  "name": "cine-app",
+  "app_id": "dfa6ec1f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

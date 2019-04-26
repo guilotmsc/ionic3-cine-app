@@ -1,0 +1,86 @@
+<ion-header >
+  <ion-navbar> 
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="adv-map">
+    <div padding>
+      <h2 style="text-align: center">Localização</h2>
+    </div>
+    
+    <div class="map-image">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDIetm07PEFTc5vU9YXZ14Yrm04usEqzhY&q=Cine+Cataratas" width="100%" height="200" frameborder="0" style="border:0"></iframe> 
+      <ion-fab right top>
+        <button ion-fab class="fab-map pop-in">
+        <ion-icon name='pin'></ion-icon>
+      </button>
+      </ion-fab>
+    </div>
+    <ion-item>
+      <ion-icon color="subtle" large item-start name="cart"></ion-icon>
+      <h2>Cataratas JL Shopping</h2>
+      <p>Av. Costa e Silva, 181 - Loja 326 - Cataratas JL Shopping</p>
+      <p>Foz do Iguaçu / Paraná</p>
+      <p>(45) 3025-3747</p>
+      <p>Horário de Atendimento: 14h00 às 22h00</p>
+    </ion-item> 
+  </ion-card>
+  <ion-card>
+    <div padding>
+      <h2 style="text-align: center">Valores</h2>
+    </div>
+		<div padding>
+	    <p align="center"><b>SEGUNDA A QUINTA</b></p>
+
+			<p><b>2D</b> INTEIRA: R$ 18,00</p>
+			<p>MEIA: R$ 9,00</p>
+
+			<p><b>3D</b> INTEIRA: R$ 24,00</p>
+			<p>MEIA: R$ 12,00</p>
+
+			<br />
+
+			<p align="center"><b>SEXTA, SÁBADO, DOMINGO E FERIADOS</b></p>
+
+			<p><b>2D</b> INTEIRA: R$ 20,00</p>
+			<p>MEIA: R$ 10,00</p>
+
+			<p><b>3D</b> INTEIRA: R$ 26,00</p>
+			<p>MEIA: R$ 13,00</p>
+		</div>
+	</ion-card>
+  
+  <ion-card>
+    <div padding> 
+      <h2 style="text-align: center">Fale conosco</h2>
+    </div>
+    <div padding>
+      <p style="text-align: justify">Encaminhe um e-mail com sua crítica, dúvida, elogio ou sugestão.</p>
+
+      <input class="form_input" type="text" name="username" value="" placeholder="Nome *">
+
+      <input class="form_input" type="email" name="password" value="" placeholder="Email *">
+
+      <input class="form_input" type="email" name="password" value="" placeholder="Telefone *">
+
+      <textarea class="form_input" size="100" placeholder="Mensagem *" ></textarea>
+     
+      <button ion-button block outline (click)="login()" style="color: #2756e8">Enviar</button>
+    </div>
+  </ion-card>
+
+    <ion-card>
+    <div padding> 
+      <h2 style="text-align: center">Redes sociais</h2>
+    </div>
+    <div padding>
+      <p style="text-align: justify">Acompanhe as ofertas tambem pelo Facebook, siga nossa pagina oficial.</p>
+      <a href="https://www.facebook.com/cinecataratasfoz/"><img src="assets/imgs/facebook.png" style="width: 50%; position: block;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto; margin-top: 5%" align="center"></a>
+    </div>
+  </ion-card>
+</ion-content>
+
+ 

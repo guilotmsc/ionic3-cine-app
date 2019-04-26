@@ -1,0 +1,90 @@
+<ion-header> 
+  <ion-toolbar no-border-top>
+    <!-- <ion-segment [(ngModel)]="segment" color="primary">
+      <ion-segment-button value="combos">
+        Combos
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        Doces
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        Bebidas
+      </ion-segment-button>
+    </ion-segment> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="assets/imgs/combo1.png" />
+    <ion-card-content>
+      <h2 class="card-title">
+        Combo 1 <ion-badge>R$ 29,00</ion-badge>
+      </h2>
+      <p>
+        2 REFRIS 550 ML + 1 BALDE DE PIPOCA GIGANTE
+      </p>
+    </ion-card-content>
+    <ion-item>
+      Total: <ion-badge>R$ 29,00</ion-badge>
+      <button item-end ion-button icon-only clear>
+        <ion-icon color="primary" name="add-circle"></ion-icon>
+      </button>1
+      <button item-end ion-button icon-only clear>
+        <ion-icon color="danger" name="remove-circle"></ion-icon>
+      </button>
+    </ion-item> 
+  </ion-card> 
+  <ion-card>
+    <img src="assets/imgs/combo2.png" />
+    <ion-card-content>
+      <h2 class="card-title">
+        Combo 1 <ion-badge>R$ 29,00</ion-badge>
+      </h2>
+      <p>
+        1 REFRIS 1100 ML + 1 BALDE DE PIPOCA GIGANTE
+      </p>
+    </ion-card-content>
+    <ion-item>
+      Total: <ion-badge>R$ 29,00</ion-badge>
+      <button item-end ion-button icon-only clear>
+        <ion-icon color="primary" name="add-circle"></ion-icon>
+      </button>
+      <button item-end ion-button icon-only clear>
+        <ion-icon color="danger" name="remove-circle"></ion-icon>
+      </button>
+    </ion-item> 
+  </ion-card> 
+  <ion-card>
+    <img src="assets/imgs/combo3.png" />
+    <ion-card-content>
+      <h2 class="card-title">
+        Combo 1 <ion-badge>R$ 30,00</ion-badge>
+      </h2>
+      <p>
+        2 REFRIS 550 ML + 2 PIPOCAS MEDIAS
+      </p>
+    </ion-card-content>
+    <ion-item>
+      Total: <ion-badge>R$ 30,00</ion-badge>
+      <button item-end ion-button icon-only clear>
+        <ion-icon color="primary" name="add-circle"></ion-icon>
+      </button>
+      <button item-end ion-button icon-only clear>
+        <ion-icon color="danger" name="remove-circle"></ion-icon>
+      </button>
+    </ion-item> 
+  </ion-card>  
+</ion-content>
+
+<ion-footer> 
+    <ion-fab bottom right >
+      <button ion-fab class="pop-in" style="background-color: #cc4b43; color: white" (click)="toPayment()" >
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+        <!-- <button class="checkout" ion-button color="primary" style="background-color: white" (click)="toPayment()" outline icon-left full end>
+            <ion-icon name="cart"></ion-icon>
+            Finalizar
+        </button> -->
+      </ion-fab>
+</ion-footer>
